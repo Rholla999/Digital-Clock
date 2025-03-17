@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(1, 1, 41);
+    color: rgb(20, 209, 20);
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+
+
+.container {
+    background: lightblue;
+    padding: 1em;
+    border-radius: 12px;
+    box-shadow: inset 4px 4px 5px whitesmoke;
+}
+
+
+#seconds {
+    color: red;
+    animation: blink 1s infinite forwards  ;
+}
+
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+#ampm {
+    color: green;
+    font-size: .4em;
+}
